@@ -5,8 +5,15 @@ class consult extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(child: Text("C O N S U L T")),
+    return const Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text("C O N S U L T"),
+          CircularProgressIndicator(),
+        ],
+      ),
     );
   }
 }

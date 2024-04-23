@@ -5,8 +5,15 @@ class hospitals extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
-      child: Center(child: Text("H O S P I T A L S")),
+    return const Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text("H O S P I T A L S"),
+          CircularProgressIndicator(),
+        ],
+      ),
     );
   }
 }

@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:app/decor_var.dart';
-import 'package:app/pages/H_page.dart';
+import 'package:app/pages/insurance_generator.dart';
 
-class place_card extends StatelessWidget {
+class Icons_card extends StatelessWidget {
 
   final String title;
-  final double rating;
-  final String address;
+  final String desc;
   final String url ;
 
-  const place_card({super.key, required this.title, 
-                               required this.rating, 
-                               required this.address, 
+  const Icons_card({super.key, required this.title, 
+                              this.desc = "description", 
                                this.url = "assets/images/max_hosp.jpg"});
   @override
   Widget build(BuildContext context) {
@@ -30,26 +28,15 @@ class place_card extends StatelessWidget {
           url,
           height: MediaQuery.sizeOf(context).aspectRatio * 150,
           width: double.infinity,
-          fit: BoxFit.cover,
+          fit: BoxFit.contain,
         ),
         ListTile(
           isThreeLine: true,
           title: Text(title),
-          subtitle: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  const Icon(Icons.star_half_rounded),
-                  Text(rating.toString()),
-                ],
-              ),
-              Text(address),
-            ],
-          ),
+          subtitle: Text(desc),
           onTap: (){
-            Navigator.push(context, 
-            MaterialPageRoute(builder: (context) => const H_page()),);
+             Navigator.push(context, 
+            MaterialPageRoute(builder: (context) => const In_Cal()),);
           },
         )
       ]),

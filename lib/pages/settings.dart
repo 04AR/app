@@ -22,56 +22,56 @@ class settings extends StatelessWidget {
             ),
           ),
           
-          TextFormField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.person),
-              hintText: 'Name...',
-              labelText: 'Name',
-            ),
-            validator: (String? value) {
-              return(value != null) ? 'enter name' : null;
-            },
-          ),
-          TextFormField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.person),
-              hintText: 'Name',
-              labelText: 'Name....',
-            ),
-            validator: (String? value) {
-              return(value != null) ? 'enter name' : null;
-            },
-          ),
-          TextFormField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.person),
-              hintText: 'Name',
-              labelText: 'Name....',
-            ),
-            validator: (String? value) {
-              return(value != null) ? 'enter name' : null;
-            },
-          ),
-          TextFormField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.person),
-              hintText: 'Name',
-              labelText: 'Name....',
-            ),
-            validator: (String? value) {
-              return(value != null) ? 'enter name' : null;
-            },
-          ),
-          TextFormField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.person),
-              hintText: 'Name',
-              labelText: 'Name....',
-            ),
-            validator: (String? value) {
-              return(value != null) ? 'enter name' : null;
-            },
-          ),
+          // TextFormField(
+          //   decoration: InputDecoration(
+          //     icon: Icon(Icons.person),
+          //     hintText: 'Name...',
+          //     labelText: 'Name',
+          //   ),
+          //   validator: (String? value) {
+          //     return(value != null) ? 'enter name' : null;
+          //   },
+          // ),
+          // TextFormField(
+          //   decoration: InputDecoration(
+          //     icon: Icon(Icons.person),
+          //     hintText: 'Name',
+          //     labelText: 'Name....',
+          //   ),
+          //   validator: (String? value) {
+          //     return(value != null) ? 'enter name' : null;
+          //   },
+          // ),
+          // TextFormField(
+          //   decoration: InputDecoration(
+          //     icon: Icon(Icons.person),
+          //     hintText: 'Name',
+          //     labelText: 'Name....',
+          //   ),
+          //   validator: (String? value) {
+          //     return(value != null) ? 'enter name' : null;
+          //   },
+          // ),
+          // TextFormField(
+          //   decoration: InputDecoration(
+          //     icon: Icon(Icons.person),
+          //     hintText: 'Name',
+          //     labelText: 'Name....',
+          //   ),
+          //   validator: (String? value) {
+          //     return(value != null) ? 'enter name' : null;
+          //   },
+          // ),
+          // TextFormField(
+          //   decoration: InputDecoration(
+          //     icon: Icon(Icons.person),
+          //     hintText: 'Name',
+          //     labelText: 'Name....',
+          //   ),
+          //   validator: (String? value) {
+          //     return(value != null) ? 'enter name' : null;
+          //   },
+          // ),
 
           const ListTile(
             title: Text('N A M E'),
